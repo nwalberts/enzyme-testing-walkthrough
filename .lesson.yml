@@ -1,0 +1,10 @@
+---
+title: "Implementing Tests for React Components"
+type: "article"
+description: "Learn how to implement tests for React components"
+tags: "javascript, react, karma, jasmine, enzyme"
+behaviors:
+  - react_testing
+  - react_on_node
+ignore:
+- "node_modules"

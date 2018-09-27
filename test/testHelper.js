@@ -1,3 +1,19 @@
+// test/testHelper.js
+
+import { mount } from 'enzyme';
+import jasmineEnzyme from 'jasmine-enzyme';
+import React from 'react';
+
+Object.assign(global, {
+  mount,
+  jasmineEnzyme,
+  React
+});
+
+// this will happen before every test
+beforeEach(() => {
+  jasmineEnzyme();
+});
 
 // function to require all modules for a given context
 let requireAll = requireContext => {
